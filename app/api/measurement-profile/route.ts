@@ -21,7 +21,7 @@ export async function PUT(req: Request) {
         name,
         unit,
         entries: {
-          deleteMany: {}, // borra las anteriores
+          deleteMany: {},
           create: entries.map((entry: any) => ({
             productType: entry.productType,
             data: entry.data,
