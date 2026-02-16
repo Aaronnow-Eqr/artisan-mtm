@@ -1,0 +1,23 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/auth/login/route": "/api/auth/login",
+  "/api/auth/logout/route": "/api/auth/logout",
+  "/api/auth/register/route": "/api/auth/register",
+  "/api/health/db/route": "/api/health/db",
+  "/api/me/route": "/api/me",
+  "/api/measurement-profile/route": "/api/measurement-profile",
+  "/api/order/item/route": "/api/order/item",
+  "/api/order/route": "/api/order",
+  "/auth/page": "/auth",
+  "/contacto/page": "/contacto",
+  "/disenar/page": "/disenar",
+  "/galeria/page": "/galeria",
+  "/medidas/page": "/medidas",
+  "/mi-cuenta/page": "/mi-cuenta",
+  "/nosotros/page": "/nosotros",
+  "/page": "/",
+  "/pago/page": "/pago",
+  "/proceso/page": "/proceso",
+  "/servicios/page": "/servicios"
+}

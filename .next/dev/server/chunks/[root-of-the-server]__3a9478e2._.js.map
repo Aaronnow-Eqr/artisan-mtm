@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/aaron/OneDrive/Documentos/GitHub/your-custom-web-pages/proxy.ts"],"sourcesContent":["import { NextRequest, NextResponse } from \"next/server\";\r\n\r\nexport function proxy(req: NextRequest) {\r\n  const token = req.cookies.get(\"token\")?.value;\r\n\r\n  const protectedPaths = [\"/mi-cuenta\", \"/orders\", \"/profile\"];\r\n\r\n  const isProtected = protectedPaths.some((path) =>\r\n    req.nextUrl.pathname.startsWith(path)\r\n  );\r\n\r\n  if (!isProtected) {\r\n    return NextResponse.next();\r\n  }\r\n\r\n  if (!token) {\r\n    return NextResponse.redirect(new URL(\"/auth\", req.url));\r\n  }\r\n\r\n  return NextResponse.next();\r\n}\r\n\r\nexport const config = {\r\n  matcher: [\"/mi-cuenta/:path*\", \"/orders/:path*\", \"/profile/:path*\"],\r\n};\r\n"],"names":[],"mappings":";;;;;;AAAA;;AAEO,SAAS,MAAM,GAAgB;IACpC,MAAM,QAAQ,IAAI,OAAO,CAAC,GAAG,CAAC,UAAU;IAExC,MAAM,iBAAiB;QAAC;QAAc;QAAW;KAAW;IAE5D,MAAM,cAAc,eAAe,IAAI,CAAC,CAAC,OACvC,IAAI,OAAO,CAAC,QAAQ,CAAC,UAAU,CAAC;IAGlC,IAAI,CAAC,aAAa;QAChB,OAAO,8IAAY,CAAC,IAAI;IAC1B;IAEA,IAAI,CAAC,OAAO;QACV,OAAO,8IAAY,CAAC,QAAQ,CAAC,IAAI,IAAI,SAAS,IAAI,GAAG;IACvD;IAEA,OAAO,8IAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;QAAqB;QAAkB;KAAkB;AACrE"}}]
+}
