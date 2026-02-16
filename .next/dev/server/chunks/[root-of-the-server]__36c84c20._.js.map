@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/aaron/OneDrive/Documentos/GitHub/artisan-mtm/app/api/auth/logout/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\r\n\r\nexport async function POST() {\r\n  const response = NextResponse.json({ message: \"Logout exitoso\" });\r\n\r\n  response.cookies.set(\"token\", \"\", {\r\n    httpOnly: true,\r\n    path: \"/\",\r\n    maxAge: 0,\r\n  });\r\n\r\n  return response;\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;;AAEO,eAAe;IACpB,MAAM,WAAW,gJAAY,CAAC,IAAI,CAAC;QAAE,SAAS;IAAiB;IAE/D,SAAS,OAAO,CAAC,GAAG,CAAC,SAAS,IAAI;QAChC,UAAU;QACV,MAAM;QACN,QAAQ;IACV;IAEA,OAAO;AACT"}}]
+}

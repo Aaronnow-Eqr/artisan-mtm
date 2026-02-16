@@ -1,7 +1,8 @@
 {
   "/api/auth/login/route": "app/api/auth/login/route.js",
-  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/auth/logout/route": "app/api/auth/logout/route.js",
   "/api/me/route": "app/api/me/route.js",
+  "/api/measurement-profile/route": "app/api/measurement-profile/route.js",
   "/auth/page": "app/auth/page.js",
   "/mi-cuenta/page": "app/mi-cuenta/page.js",
   "/page": "app/page.js"

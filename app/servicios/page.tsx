@@ -105,7 +105,7 @@ const Servicios = () => {
         </div>
       </section>
 
-      {/* servicios */}
+      {/* Main Services */}
       {services.map((service, index) => (
         <section key={service.id} className={`py-24 ${index % 2 === 0 ? "bg-charcoal" : "bg-background"}`}>
           <div className="container mx-auto px-6">
@@ -173,7 +173,7 @@ const Servicios = () => {
         </section>
       ))}
 
-      {/* Adicionales */}
+      {/* Additional Services */}
       <section className="py-24 bg-charcoal-light">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -204,6 +204,7 @@ const Servicios = () => {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-24 relative overflow-hidden gradient-dark">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-display text-4xl text-cream mb-6">
