@@ -154,10 +154,9 @@ export default function MiCuentaPage() {
                   </div>
 
                   <div className="border-t border-gold/10 pt-6 space-y-2">
-                    <h2 className="font-display text-xl text-gold">P</h2>
+                    <h2 className="font-display text-xl text-gold">Carrito</h2>
                     <ul className="list-disc pl-5 text-cream/70 space-y-1">
                       <li>órdenes / pedidos</li>
-                      <li>carrito (orden en progreso)</li>
                     </ul>
                     <div className="pt-4">
                       <Button variant="gold" asChild>
